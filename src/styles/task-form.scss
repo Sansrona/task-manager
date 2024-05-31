@@ -1,0 +1,54 @@
+@import './colors';
+
+.task__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &_field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 12px;
+  }
+
+  &_label {
+    font-size: 10px;
+  }
+
+  &_input,
+  &_textarea {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  &_button {
+    margin-top: 28px;
+    border-radius: 4px;
+  }
+
+  &_close {
+    display: flex;
+    justify-content: end;
+    .button {
+      border-radius: 2px;
+      padding: 4px;
+    }
+  }
+  &_body {
+    padding: 0px 20px 30px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

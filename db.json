@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "First task",
+      "description": "Description fo first task",
+      "dueDate": "2024-06-01",
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "первое задание",
+      "description": "ТЗ",
+      "dueDate": "2024-05-01",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title": "second task",
+      "description": "cool description",
+      "dueDate": "2024-05-03",
+      "completed": false
+    }
+  ]
+}
