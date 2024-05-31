@@ -12,7 +12,7 @@ export const useTaskStore = defineStore('task-store', {
     tasks: [],
   }),
   getters: {
-    lastId: state => state.tasks.length,
+    lastId: state => Number(state.tasks[state.tasks.length - 1]?.id) + 1,
   },
   actions: {
     async fetchTasks(text = '') {
@@ -25,8 +25,6 @@ export const useTaskStore = defineStore('task-store', {
       this.tasks.push(response.data);
     },
     async updateTask(task: TaskType) {
-      console.log(task, 'eed');
-
       await taskApi.putTask(task.id, task);
       const index = this.tasks.findIndex(t => t.id === task.id);
       if (index !== -1) {

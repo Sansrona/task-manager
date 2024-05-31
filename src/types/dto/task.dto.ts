@@ -1,5 +1,5 @@
 export type TaskDto = {
-  id: number;
+  id: string;
   title: string;
   description: string;
   dueDate: Date;

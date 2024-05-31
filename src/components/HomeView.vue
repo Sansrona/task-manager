@@ -26,7 +26,7 @@ const showModal = ref(false);
 const searchQuery = ref('');
 
 const newTask = ref<TaskType>({
-  id: taskStore.lastId,
+  id: '',
   title: '',
   description: '',
   dueDate: new Date(),
@@ -37,7 +37,7 @@ const addTask = (task: TaskDto) => {
   taskStore.addTask({
     completed: false,
     dueDate: task.dueDate,
-    id: taskStore.lastId,
+    id: String(taskStore.lastId),
     description: task.description,
     title: task.title
   });

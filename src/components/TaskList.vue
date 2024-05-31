@@ -1,5 +1,5 @@
 <template>
-  <div class="task-list">
+  <div class="task__list">
     <div v-for="task in taskStore.tasks" :key="task.id" class="task-item">
       <TaskItem :task="task" @edit="editTask" @delete="deleteTask" @toggle="toggleTaskStatus" />
     </div>
@@ -19,5 +19,5 @@ const toggleTaskStatus = (task: TaskType) => { taskStore.toggleTaskStatus(task) 
 </script>
 
 <style scoped>
-@import '../styles/task-list.scss';
+@import '../styles/main.scss';
 </style>
